@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Login</title>
+  <style>
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+}
+
+
+.login-container {
+  background: #fff;
+  padding: 40px 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-box label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-box input:focus {
+  border-color: #4e73df;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4e73df;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #3755c0;
+}
+
+
+.note {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Employee Login</h2>
+    <form>
+      <div class="input-box">
+        <label for="empid">Employee ID</label>
+        <input type="text" id="empid" name="empid" placeholder="Enter your Employee ID" required>
+      </div>
+      <div class="input-box">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p class="note">For support, contact HR Department</p>
+    </form>
+  </div>
+</body>
+</html>
